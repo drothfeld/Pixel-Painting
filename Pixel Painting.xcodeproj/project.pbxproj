@@ -12,6 +12,7 @@
 		B002331F212A04C100A71E28 /* toolbar-pencil-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B002331B212A04C100A71E28 /* toolbar-pencil-button.png */; };
 		B0023320212A04C100A71E28 /* toolbar-eraser-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B002331C212A04C100A71E28 /* toolbar-eraser-button.png */; };
 		B0023321212A04C100A71E28 /* toolbar-save-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B002331D212A04C100A71E28 /* toolbar-save-button.png */; };
+		B0023324212A0C4600A71E28 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0023323212A0C4600A71E28 /* Colors.swift */; };
 		B00FF15021277E52007AA744 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00FF14F21277E52007AA744 /* AppDelegate.swift */; };
 		B00FF15221277E52007AA744 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00FF15121277E52007AA744 /* ViewController.swift */; };
 		B00FF15521277E52007AA744 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B00FF15321277E52007AA744 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 		B002331B212A04C100A71E28 /* toolbar-pencil-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toolbar-pencil-button.png"; sourceTree = "<group>"; };
 		B002331C212A04C100A71E28 /* toolbar-eraser-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toolbar-eraser-button.png"; sourceTree = "<group>"; };
 		B002331D212A04C100A71E28 /* toolbar-save-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toolbar-save-button.png"; sourceTree = "<group>"; };
+		B0023323212A0C4600A71E28 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		B00FF14C21277E52007AA744 /* Pixel Painting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pixel Painting.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00FF14F21277E52007AA744 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B00FF15121277E52007AA744 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,13 +47,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B00233152129635200A71E28 /* View Controller */ = {
+		B00233152129635200A71E28 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				B00FF15121277E52007AA744 /* ViewController.swift */,
 				B0023316212963E200A71E28 /* CanvasView.swift */,
 			);
-			path = "View Controller";
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		B0023318212A00E400A71E28 /* Assets */ = {
@@ -73,6 +75,14 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		B0023322212A0C3B00A71E28 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				B0023323212A0C4600A71E28 /* Colors.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		B00FF14321277E52007AA744 = {
 			isa = PBXGroup;
 			children = (
@@ -92,8 +102,9 @@
 		B00FF14E21277E52007AA744 /* Pixel Painting */ = {
 			isa = PBXGroup;
 			children = (
+				B0023322212A0C3B00A71E28 /* Constants */,
 				B0023318212A00E400A71E28 /* Assets */,
-				B00233152129635200A71E28 /* View Controller */,
+				B00233152129635200A71E28 /* View Controllers */,
 				B00FF14F21277E52007AA744 /* AppDelegate.swift */,
 				B00FF15321277E52007AA744 /* Main.storyboard */,
 				B00FF15621277E53007AA744 /* Assets.xcassets */,
@@ -179,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B00FF15221277E52007AA744 /* ViewController.swift in Sources */,
+				B0023324212A0C4600A71E28 /* Colors.swift in Sources */,
 				B00FF15021277E52007AA744 /* AppDelegate.swift in Sources */,
 				B0023317212963E200A71E28 /* CanvasView.swift in Sources */,
 			);
