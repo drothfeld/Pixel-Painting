@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		B0023317212963E200A71E28 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0023316212963E200A71E28 /* CanvasView.swift */; };
+		B002331E212A04C100A71E28 /* toolbar-reset-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B002331A212A04C100A71E28 /* toolbar-reset-button.png */; };
+		B002331F212A04C100A71E28 /* toolbar-pencil-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B002331B212A04C100A71E28 /* toolbar-pencil-button.png */; };
+		B0023320212A04C100A71E28 /* toolbar-eraser-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B002331C212A04C100A71E28 /* toolbar-eraser-button.png */; };
+		B0023321212A04C100A71E28 /* toolbar-save-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B002331D212A04C100A71E28 /* toolbar-save-button.png */; };
 		B00FF15021277E52007AA744 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00FF14F21277E52007AA744 /* AppDelegate.swift */; };
 		B00FF15221277E52007AA744 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00FF15121277E52007AA744 /* ViewController.swift */; };
 		B00FF15521277E52007AA744 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B00FF15321277E52007AA744 /* Main.storyboard */; };
@@ -17,6 +21,10 @@
 
 /* Begin PBXFileReference section */
 		B0023316212963E200A71E28 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		B002331A212A04C100A71E28 /* toolbar-reset-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toolbar-reset-button.png"; sourceTree = "<group>"; };
+		B002331B212A04C100A71E28 /* toolbar-pencil-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toolbar-pencil-button.png"; sourceTree = "<group>"; };
+		B002331C212A04C100A71E28 /* toolbar-eraser-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toolbar-eraser-button.png"; sourceTree = "<group>"; };
+		B002331D212A04C100A71E28 /* toolbar-save-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toolbar-save-button.png"; sourceTree = "<group>"; };
 		B00FF14C21277E52007AA744 /* Pixel Painting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pixel Painting.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00FF14F21277E52007AA744 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B00FF15121277E52007AA744 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +54,25 @@
 			path = "View Controller";
 			sourceTree = "<group>";
 		};
+		B0023318212A00E400A71E28 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B0023319212A00EF00A71E28 /* Images */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		B0023319212A00EF00A71E28 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B002331C212A04C100A71E28 /* toolbar-eraser-button.png */,
+				B002331B212A04C100A71E28 /* toolbar-pencil-button.png */,
+				B002331A212A04C100A71E28 /* toolbar-reset-button.png */,
+				B002331D212A04C100A71E28 /* toolbar-save-button.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		B00FF14321277E52007AA744 = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +92,7 @@
 		B00FF14E21277E52007AA744 /* Pixel Painting */ = {
 			isa = PBXGroup;
 			children = (
+				B0023318212A00E400A71E28 /* Assets */,
 				B00233152129635200A71E28 /* View Controller */,
 				B00FF14F21277E52007AA744 /* AppDelegate.swift */,
 				B00FF15321277E52007AA744 /* Main.storyboard */,
@@ -133,9 +161,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0023321212A04C100A71E28 /* toolbar-save-button.png in Resources */,
 				B00FF15A21277E53007AA744 /* LaunchScreen.storyboard in Resources */,
 				B00FF15721277E53007AA744 /* Assets.xcassets in Resources */,
 				B00FF15521277E52007AA744 /* Main.storyboard in Resources */,
+				B0023320212A04C100A71E28 /* toolbar-eraser-button.png in Resources */,
+				B002331F212A04C100A71E28 /* toolbar-pencil-button.png in Resources */,
+				B002331E212A04C100A71E28 /* toolbar-reset-button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

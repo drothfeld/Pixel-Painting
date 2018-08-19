@@ -35,6 +35,16 @@ class CanvasView: UIView {
         lineWidth = 40
     }
     
+    // Set line color to passed value
+    func setLineColor(newColor: UIColor) {
+        lineColor = newColor
+    }
+    
+    // Set line width to passed value
+    func setLineWidth(newWidth: CGFloat) {
+        lineWidth = newWidth
+    }
+    
     // User touches the canvas
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch = touches.first
