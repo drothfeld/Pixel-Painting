@@ -20,6 +20,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var PencilToolButton: UIButton!
     @IBOutlet weak var EraserToolButton: UIButton!
     
+    // Controller Values
+    var isResetViewOpen: Bool = false
+    var isColorPickerViewOpen: Bool = false
+    var isDrawing: Bool = true
+    var isErasing: Bool = false
+    var currentColor: UIColor = black
+    var currentWidth: CGFloat = 5.00
+    var currentAlpha: CGFloat = 1.00
+    
     // View loaded
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,6 +66,10 @@ class ViewController: UIViewController {
     
     // Reset button is pressed
     @IBAction func resetCanvasPressed(_ sender: Any) {
+    }
+    
+    // New color pick option is selected
+    @IBAction func colorPickerOptionPressed(_ sender: Any) {
     }
     
     // Hide status bar
