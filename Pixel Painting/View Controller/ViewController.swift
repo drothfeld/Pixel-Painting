@@ -9,11 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    // Storyboard IBOutlets
+    @IBOutlet weak var MainCanvasView: CanvasView!
+    
+    // View loaded
     override func viewDidLoad() {
         super.viewDidLoad()
+        MainCanvasView.setToDraw()
     }
     
+    // Hide status bar
     override var prefersStatusBarHidden: Bool{
         return true
     }
