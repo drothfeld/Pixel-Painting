@@ -50,6 +50,8 @@ class ViewController: UIViewController {
     
     // Color picker toolbar option is pressed
     @IBAction func colorPickerToolPressed(_ sender: Any) {
+        isColorPickerViewOpen = !isColorPickerViewOpen
+        ColorPickerView.isHidden = !ColorPickerView.isHidden
     }
     
     // Pencil tool is pressed
@@ -66,6 +68,24 @@ class ViewController: UIViewController {
     
     // Reset button is pressed
     @IBAction func resetCanvasPressed(_ sender: Any) {
+        isResetViewOpen = !isResetViewOpen
+        ResetCanvasConfirmationView.isHidden = !ResetCanvasConfirmationView.isHidden
+    }
+    
+    // Yes reset canvas button is pressed
+    @IBAction func yesResetCanvasPressed(_ sender: Any) {
+        isResetViewOpen = false
+        ResetCanvasConfirmationView.isHidden = true
+        isColorPickerViewOpen = !isColorPickerViewOpen
+        ColorPickerView.isHidden = true
+        MainCanvasView.setToDraw()
+        MainCanvasView.clearCanvas()
+    }
+    
+    // No reset canvas button is pressed
+    @IBAction func noResetCanvasPressed(_ sender: Any) {
+        isResetViewOpen = false
+        ResetCanvasConfirmationView.isHidden = true
     }
     
     // New color pick option is selected
