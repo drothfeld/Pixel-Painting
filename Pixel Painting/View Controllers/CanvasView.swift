@@ -13,6 +13,7 @@ class CanvasView: UIView {
     // Controller Values
     var lineColor: UIColor!
     var lineWidth: CGFloat!
+    var lineAlpha: Float!
     var path: UIBezierPath!
     var touchPoint: CGPoint!
     var startingPoint: CGPoint!
@@ -25,8 +26,9 @@ class CanvasView: UIView {
     
     // Set tool settings to drawing
     func setToDraw() {
-        lineColor = UIColor.black
-        lineWidth = 5
+        lineColor = defaultColor
+        lineWidth = defaultWidth
+        lineAlpha = defaultAlpha
     }
     
     // Set tool settings to erase
@@ -43,6 +45,11 @@ class CanvasView: UIView {
     // Set line width to passed value
     func setLineWidth(newWidth: CGFloat) {
         lineWidth = newWidth
+    }
+    
+    // Set line alpha to passed value
+    func setLineAlpha(newAlpha: Float) {
+        lineAlpha = newAlpha
     }
     
     // User touches the canvas
@@ -85,6 +92,7 @@ class CanvasView: UIView {
         shapeLayer.path = path.cgPath
         shapeLayer.strokeColor = lineColor.cgColor
         shapeLayer.lineWidth = lineWidth
+        shapeLayer.opacity = lineAlpha
         shapeLayer.fillColor = UIColor.clear.cgColor
         self.layer.addSublayer(shapeLayer)
         self.setNeedsDisplay()

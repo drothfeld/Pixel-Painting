@@ -25,9 +25,9 @@ class ViewController: UIViewController {
     var isColorPickerViewOpen: Bool = false
     var isDrawing: Bool = true
     var isErasing: Bool = false
-    var currentColor: UIColor = black
-    var currentWidth: CGFloat = 5.00
-    var currentAlpha: CGFloat = 1.00
+    var currentColor: UIColor = defaultColor
+    var currentWidth: CGFloat = defaultWidth
+    var currentAlpha: Float = defaultAlpha
     
     // View loaded
     override func viewDidLoad() {
@@ -42,10 +42,14 @@ class ViewController: UIViewController {
     
     // Width slider value changes
     @IBAction func widthSliderChanges(_ sender: Any) {
+        let sliderValue: CGFloat = CGFloat((sender as! UISlider).value)
+        MainCanvasView.setLineWidth(newWidth: sliderValue)
     }
     
     // Alpha slider value changes
     @IBAction func alphaSliderChanges(_ sender: Any) {
+        let sliderValue: Float = (sender as! UISlider).value
+        MainCanvasView.setLineAlpha(newAlpha: sliderValue)
     }
     
     // Color picker toolbar option is pressed
@@ -81,6 +85,10 @@ class ViewController: UIViewController {
         
         MainCanvasView.setToDraw()
         MainCanvasView.clearCanvas()
+        
+        ColorPickerButton.backgroundColor = black
+        WidthSlider.value = Float(defaultWidth)
+        AlphaSlider.value = defaultAlpha
     }
     
     // No reset canvas button is pressed
