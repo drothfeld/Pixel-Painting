@@ -76,8 +76,9 @@ class ViewController: UIViewController {
     @IBAction func yesResetCanvasPressed(_ sender: Any) {
         isResetViewOpen = false
         ResetCanvasConfirmationView.isHidden = true
-        isColorPickerViewOpen = !isColorPickerViewOpen
+        isColorPickerViewOpen = false
         ColorPickerView.isHidden = true
+        
         MainCanvasView.setToDraw()
         MainCanvasView.clearCanvas()
     }
@@ -90,6 +91,13 @@ class ViewController: UIViewController {
     
     // New color pick option is selected
     @IBAction func colorPickerOptionPressed(_ sender: Any) {
+        let pickedColor: UIColor = colorPickerOptions[(sender as! UIButton).tag]
+        MainCanvasView.setLineColor(newColor: pickedColor)
+        ColorPickerButton.backgroundColor = pickedColor
+        
+        
+        isColorPickerViewOpen = false
+        ColorPickerView.isHidden = true
     }
     
     // Hide status bar
