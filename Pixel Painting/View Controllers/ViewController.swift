@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     // Storyboard IBOutlets
     @IBOutlet weak var MainCanvasView: CanvasView!
+    @IBOutlet weak var ToolbarView: UIView!
     @IBOutlet weak var ResetCanvasConfirmationView: UIView!
     @IBOutlet weak var ColorPickerView: UIView!
     @IBOutlet weak var WidthSlider: UISlider!
@@ -28,6 +29,7 @@ class ViewController: UIViewController {
     var currentColor: UIColor = defaultColor
     var currentWidth: CGFloat = defaultWidth
     var currentAlpha: Float = defaultAlpha
+    let toastDuration: Double = 2.0
     
     // View loaded
     override func viewDidLoad() {
@@ -68,6 +70,7 @@ class ViewController: UIViewController {
     
     // Save button is pressed
     @IBAction func saveCanvasPressed(_ sender: Any) {
+        takeCanvasSnapshot()
     }
     
     // Reset button is pressed
@@ -106,6 +109,17 @@ class ViewController: UIViewController {
         
         isColorPickerViewOpen = false
         ColorPickerView.isHidden = true
+    }
+    
+    // Take a snapshot of the users canvas and
+    // save it to the Photos app
+    func takeCanvasSnapshot() {
+        ToolbarView.isHidden = true
+        let style = ToastStyle()
+        let canvasSnapshot: UIImage = UIApplication.shared.screenShot!
+        self.view.makeToast("Canvas image has been saved to Photos Library.", duration: toastDuration, position: .top, style: style)
+        UIImageWriteToSavedPhotosAlbum(canvasSnapshot, nil, nil, nil)
+        ToolbarView.isHidden = false
     }
     
     // Hide status bar

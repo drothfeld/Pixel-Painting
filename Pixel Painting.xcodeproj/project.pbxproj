@@ -19,6 +19,8 @@
 		B00FF15721277E53007AA744 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B00FF15621277E53007AA744 /* Assets.xcassets */; };
 		B00FF15A21277E53007AA744 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B00FF15821277E53007AA744 /* LaunchScreen.storyboard */; };
 		B0B50D51212B55F7008A7352 /* DefaultValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B50D50212B55F7008A7352 /* DefaultValues.swift */; };
+		B0BD2096212E484B0012E533 /* Screenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BD2095212E484B0012E533 /* Screenshot.swift */; };
+		B0BD2098212E49CA0012E533 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BD2097212E49CA0012E533 /* Toast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		B00FF15921277E53007AA744 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B00FF15B21277E53007AA744 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0B50D50212B55F7008A7352 /* DefaultValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultValues.swift; sourceTree = "<group>"; };
+		B0BD2095212E484B0012E533 /* Screenshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screenshot.swift; sourceTree = "<group>"; };
+		B0BD2097212E49CA0012E533 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 		B00FF14E21277E52007AA744 /* Pixel Painting */ = {
 			isa = PBXGroup;
 			children = (
+				B0BD2094212E482A0012E533 /* Extensions */,
 				B0023322212A0C3B00A71E28 /* Constants */,
 				B0023318212A00E400A71E28 /* Assets */,
 				B00233152129635200A71E28 /* View Controllers */,
@@ -115,6 +120,15 @@
 				B00FF15B21277E53007AA744 /* Info.plist */,
 			);
 			path = "Pixel Painting";
+			sourceTree = "<group>";
+		};
+		B0BD2094212E482A0012E533 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B0BD2095212E484B0012E533 /* Screenshot.swift */,
+				B0BD2097212E49CA0012E533 /* Toast.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,10 +207,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0B50D51212B55F7008A7352 /* DefaultValues.swift in Sources */,
+				B0BD2096212E484B0012E533 /* Screenshot.swift in Sources */,
 				B00FF15221277E52007AA744 /* ViewController.swift in Sources */,
 				B0023324212A0C4600A71E28 /* Colors.swift in Sources */,
 				B00FF15021277E52007AA744 /* AppDelegate.swift in Sources */,
 				B0023317212963E200A71E28 /* CanvasView.swift in Sources */,
+				B0BD2098212E49CA0012E533 /* Toast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

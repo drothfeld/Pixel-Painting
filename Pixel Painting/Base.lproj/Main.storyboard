@@ -337,6 +337,7 @@ canvas?</string>
                         <outlet property="MainCanvasView" destination="0dD-bw-O9u" id="jHv-Dp-KjJ"/>
                         <outlet property="PencilToolButton" destination="Vqd-zE-ZnB" id="yzU-fW-sxM"/>
                         <outlet property="ResetCanvasConfirmationView" destination="q8U-fa-j2C" id="Sai-rE-9O0"/>
+                        <outlet property="ToolbarView" destination="fO3-h9-Rlx" id="OFS-RE-CKq"/>
                         <outlet property="WidthSlider" destination="ezd-pL-D0P" id="Imh-q6-zdV"/>
                     </connections>
                 </viewController>
