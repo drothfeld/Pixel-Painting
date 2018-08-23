@@ -18,6 +18,7 @@
 		B00FF15521277E52007AA744 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B00FF15321277E52007AA744 /* Main.storyboard */; };
 		B00FF15721277E53007AA744 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B00FF15621277E53007AA744 /* Assets.xcassets */; };
 		B00FF15A21277E53007AA744 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B00FF15821277E53007AA744 /* LaunchScreen.storyboard */; };
+		B0B1B40A212F7EE1000D925E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B0B1B409212F7EE1000D925E /* README.md */; };
 		B0B50D51212B55F7008A7352 /* DefaultValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B50D50212B55F7008A7352 /* DefaultValues.swift */; };
 		B0BD2096212E484B0012E533 /* Screenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BD2095212E484B0012E533 /* Screenshot.swift */; };
 		B0BD2098212E49CA0012E533 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BD2097212E49CA0012E533 /* Toast.swift */; };
@@ -37,6 +38,7 @@
 		B00FF15621277E53007AA744 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B00FF15921277E53007AA744 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B00FF15B21277E53007AA744 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0B1B409212F7EE1000D925E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B0B50D50212B55F7008A7352 /* DefaultValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultValues.swift; sourceTree = "<group>"; };
 		B0BD2095212E484B0012E533 /* Screenshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screenshot.swift; sourceTree = "<group>"; };
 		B0BD2097212E49CA0012E533 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 		B00FF14321277E52007AA744 = {
 			isa = PBXGroup;
 			children = (
+				B0B1B409212F7EE1000D925E /* README.md */,
 				B00FF14E21277E52007AA744 /* Pixel Painting */,
 				B00FF14D21277E52007AA744 /* Products */,
 			);
@@ -195,6 +198,7 @@
 				B00FF15521277E52007AA744 /* Main.storyboard in Resources */,
 				B0023320212A04C100A71E28 /* toolbar-eraser-button.png in Resources */,
 				B002331F212A04C100A71E28 /* toolbar-pencil-button.png in Resources */,
+				B0B1B40A212F7EE1000D925E /* README.md in Resources */,
 				B002331E212A04C100A71E28 /* toolbar-reset-button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
