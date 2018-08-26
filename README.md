@@ -1,7 +1,7 @@
 # Pixel Painting
 IOS Application
 
-Version 0.1.0a
+Version 0.1.1a
 
 **Description:**
 - Pixel Painting is an incredibly lightweight drawing application for quick artistic sketches.

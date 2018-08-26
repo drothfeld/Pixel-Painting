@@ -18,6 +18,7 @@
 		B00FF15521277E52007AA744 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B00FF15321277E52007AA744 /* Main.storyboard */; };
 		B00FF15721277E53007AA744 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B00FF15621277E53007AA744 /* Assets.xcassets */; };
 		B00FF15A21277E53007AA744 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B00FF15821277E53007AA744 /* LaunchScreen.storyboard */; };
+		B08C625321331C790051BE0A /* launch-screen-background.png in Resources */ = {isa = PBXBuildFile; fileRef = B08C625221331C790051BE0A /* launch-screen-background.png */; };
 		B0B1B40A212F7EE1000D925E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B0B1B409212F7EE1000D925E /* README.md */; };
 		B0B50D51212B55F7008A7352 /* DefaultValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B50D50212B55F7008A7352 /* DefaultValues.swift */; };
 		B0BD2096212E484B0012E533 /* Screenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BD2095212E484B0012E533 /* Screenshot.swift */; };
@@ -38,6 +39,7 @@
 		B00FF15621277E53007AA744 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B00FF15921277E53007AA744 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B00FF15B21277E53007AA744 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B08C625221331C790051BE0A /* launch-screen-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch-screen-background.png"; sourceTree = "<group>"; };
 		B0B1B409212F7EE1000D925E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B0B50D50212B55F7008A7352 /* DefaultValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultValues.swift; sourceTree = "<group>"; };
 		B0BD2095212E484B0012E533 /* Screenshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screenshot.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 		B0023319212A00EF00A71E28 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				B08C625221331C790051BE0A /* launch-screen-background.png */,
 				B002331C212A04C100A71E28 /* toolbar-eraser-button.png */,
 				B002331B212A04C100A71E28 /* toolbar-pencil-button.png */,
 				B002331A212A04C100A71E28 /* toolbar-reset-button.png */,
@@ -194,6 +197,7 @@
 			files = (
 				B0023321212A04C100A71E28 /* toolbar-save-button.png in Resources */,
 				B00FF15A21277E53007AA744 /* LaunchScreen.storyboard in Resources */,
+				B08C625321331C790051BE0A /* launch-screen-background.png in Resources */,
 				B00FF15721277E53007AA744 /* Assets.xcassets in Resources */,
 				B00FF15521277E52007AA744 /* Main.storyboard in Resources */,
 				B0023320212A04C100A71E28 /* toolbar-eraser-button.png in Resources */,
